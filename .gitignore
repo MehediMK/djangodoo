@@ -26,6 +26,34 @@ odoo/addons/base/maintenance
 # project specific config files
 config.py
 
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Django 
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# default database
+db.sqlite3
+
 # generated for windows installer?
 install/win32/*.bat
 install/win32/meta.py
