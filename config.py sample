@@ -1,0 +1,4 @@
+class Config:
+    SECRET_KEY: str = 'your_secret_key'
+    DEBUG: bool = True # Set to False in production
+    ALLOWED_HOSTS: list = ['*'] # Set to ['your_domain.com'] in production
