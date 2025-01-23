@@ -45,6 +45,7 @@ djangodoo/
 ---
 
 ## Setup Instructions
+
 Follow the steps below to set up the project locally:
 
 ### Prerequisites
@@ -75,7 +76,7 @@ pip install -r requirements.txt
 ```bash
 copy "config.py sample" config.py
 ```
-### Step 4: Apply Initial Migrations
+### Step 5: Apply Initial Migrations
 
 Run migrations for the core system:
 
@@ -83,7 +84,7 @@ Run migrations for the core system:
 python manage.py migrate
 ```
 
-### Step 5: Register and Enable Modules
+### Step 6: Register and Enable Modules
 
 1. Place your modules inside the `modules/` directory.
 2. Use the `load_modules` management command to register modules:
@@ -94,7 +95,7 @@ python manage.py migrate
 
 3. Enable desired modules from the Django admin panel (Core > Modules).
 
-### Step 6: Apply Module Migrations
+### Step 7: Apply Module Migrations
 
 Run migrations for all enabled modules:
 
@@ -102,7 +103,7 @@ Run migrations for all enabled modules:
 python manage.py apply_module_migrations
 ```
 
-### Step 7: Start the Development Server
+### Step 8: Start the Development Server
 
 ```bash
 python manage.py runserver
