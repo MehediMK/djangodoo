@@ -1,8 +1,10 @@
-# Modular Django System
+# DjangoDoo: A Modular Multipurpose Application Framework
 
 ## About the Project
 
-This project demonstrates how to build a modular, extensible system using Django, inspired by the architecture of Odoo. Each module in the system is independent, can have its own models, views, and templates, and can be dynamically enabled or disabled without impacting the core system. This architecture allows for better maintainability, scalability, and flexibility when building large applications.
+DjangoDoo is an open-source framework designed to serve as a multipurpose application platform, inspired by the modular architecture of Odoo. Built on the Django framework, DjangoDoo enables developers to create scalable, extensible, and maintainable applications by leveraging a modular design. Each module in DjangoDoo operates independently, with its own models, views, templates, and configurations, allowing dynamic enablement or disablement without affecting the core system.
+
+This project aims to provide an efficient and flexible foundation for developing large-scale applications with minimal effort, following industry best practices.
 
 ### Key Features
 - **Dynamic Module Loading**: Modules can be enabled or disabled dynamically.
@@ -70,8 +72,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-
-### Step 4: Apply Initial Migrations
+### step 4: Setup Configuration in config.py
+```bash
+copy "config.py sample" config.py
+```
+### Step 5: Apply Initial Migrations
 
 Run migrations for the core system:
 
@@ -79,7 +84,7 @@ Run migrations for the core system:
 python manage.py migrate
 ```
 
-### Step 5: Register and Enable Modules
+### Step 6: Register and Enable Modules
 
 1. Place your modules inside the `modules/` directory.
 2. Use the `load_modules` management command to register modules:
@@ -90,7 +95,7 @@ python manage.py migrate
 
 3. Enable desired modules from the Django admin panel (Core > Modules).
 
-### Step 6: Apply Module Migrations
+### Step 7: Apply Module Migrations
 
 Run migrations for all enabled modules:
 
@@ -98,7 +103,7 @@ Run migrations for all enabled modules:
 python manage.py apply_module_migrations
 ```
 
-### Step 7: Start the Development Server
+### Step 8: Start the Development Server
 
 ```bash
 python manage.py runserver

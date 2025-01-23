@@ -44,7 +44,7 @@ docs/_build/
 # PyBuilder
 target/
 
-# Django 
+# Django
 *.log
 *.pot
 *.pyc
