@@ -86,3 +86,7 @@ package.json
 .venv
 /env
 .env
+
+# ignore staticfiles
+!staticfiles/.gitkeep
+staticfiles/*/**
