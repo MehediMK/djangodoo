@@ -90,3 +90,4 @@ package.json
 # ignore staticfiles
 !staticfiles/.gitkeep
 staticfiles/*/**
+migrations/

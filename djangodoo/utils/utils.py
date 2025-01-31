@@ -2,6 +2,9 @@ from django.apps import apps
 
 
 class Utils:
+    def __init__(self):
+        pass
+
     def get_name(self, app_config):
         """
         Get the name of the app.

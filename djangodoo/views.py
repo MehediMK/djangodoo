@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from djangodoo.utils.utils import utils
+from djangodoo.utils import utils
 
 
 def get_app_list(request):

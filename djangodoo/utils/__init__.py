@@ -1,4 +1,4 @@
-from djangodoo.utils import utils
+from .utils import utils
 
 
 __all__ = ["utils"]
