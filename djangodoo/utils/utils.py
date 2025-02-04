@@ -51,7 +51,7 @@ class Utils:
         app_configs = self.get_installed_configs_excepet_contrib()
         apps_list = [
             {
-                "name": self.get_name(app_config),
+                "name": self.get_name(app_config).replace("_", " ").title(),
                 "description": self.get_description(app_config),
                 "icon": self.get_icon(app_config),  # Default icon path `base/icon.png`
                 "version": self.get_version(app_config),
