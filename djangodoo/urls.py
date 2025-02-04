@@ -9,6 +9,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('apps/', views.get_app_list, name='apps_list'),
+    path('create-app/', views.create_app, name='create_app'),
 ]
 
 if settings.DEBUG:
