@@ -1,10 +1,10 @@
-# DjangoDoo: A Modular Multipurpose Application Framework
+# DjangoDoo: A Modular, Versatile Application Framework
 
 ## About the Project
 
-DjangoDoo is an open-source framework designed to serve as a multipurpose application platform, inspired by the modular architecture of Odoo. Built on the Django framework, DjangoDoo enables developers to create scalable, extensible, and maintainable applications by leveraging a modular design. Each module in DjangoDoo operates independently, with its own models, views, templates, and configurations, allowing dynamic enablement or disablement without affecting the core system.
+DjangoDoo is an open-source framework designed to be a flexible platform for building diverse applications, inspired by the modular architecture of Odoo. Built on the Django framework, DjangoDoo enables developers to create scalable, extensible, and maintainable applications through a modular design. Each module in DjangoDoo operates independently, with its own models, views, templates, and configurations. Modules can be dynamically enabled or disabled without affecting the core system.
 
-This project aims to provide an efficient and flexible foundation for developing large-scale applications with minimal effort, following industry best practices.
+This project aims to provide an efficient and flexible solution for developers looking to build complex applications with ease.
 
 ### Key Features
 - **Dynamic Module Loading**: Modules can be enabled or disabled dynamically.
@@ -53,7 +53,7 @@ Follow the steps below to set up the project locally:
 ### Prerequisites
 - Python 3.10+
 - Django 4.x
-- A database (SQLite, PostgreSQL, etc.)
+- A supported database (e.g., SQLite, PostgreSQL)
 
 ### Step 1: Clone the Repository
 
@@ -65,8 +65,8 @@ cd djangodoo
 ### Step 2: Create and Activate a Virtual Environment
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv venv # On Unix or MacOS
+source venv/bin/activate # On Windows: venv\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
@@ -138,8 +138,8 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 ### Managing Modules
 
-- **Enable/Disable Modules**: Use the admin panel or update the `enabled` field in the `Module` model.
-- **Check Module Dependencies**: Ensure all dependencies are enabled before activating a module.
+- **Enable/Disable Modules**: Use the admin panel or update the `enabled` field in the `Module` model directly.
+- **Verify Module Dependencies**: Ensure all dependencies are enabled before activating a module.
 - **Apply Module Migrations**: Use the `apply_module_migrations` command.
 
 ---
