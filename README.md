@@ -31,6 +31,8 @@ djangodoo/
 ├── modules/                 # Folder containing all modules
 │   ├── sales/               # Example module: Sales
 │   │   ├── migrations/      # Independent migrations for this module
+│   │   ├── admin.py         # Admin for register models into admin dashboard
+│   │   ├── apps.py          # Apps for module information (name, version, icon, etc)
 │   │   ├── models.py        # Models for this module
 │   │   ├── views.py         # Views for this module
 │   │   ├── templates/       # Templates for this module
@@ -123,9 +125,12 @@ Visit `http://127.0.0.1:8000` in your browser.
    ```python
    class ModuleConfig:
        name = "New Module"
-       version = "1.0"
+       # Add custom fields
        description = "Description of the new module"
        dependencies = []  # List of module names this module depends on
+       version = '1.0.0'
+       # icon Path must be in your module static directory with module name
+       icon = "module_name/icon.png"  
    ```
 
 3. Add your models, views, templates, and migrations in the new module folder.
@@ -146,7 +151,6 @@ Contributions are welcome! Please follow these steps to contribute:
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature-name`).
 3. Commit your changes (`git commit -m "Add feature"`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a pull request.
-
+4. Open a pull request from parent branch (`git pull origin parent-branch`).
+5. Push to the branch (`git push origin feature-name`).
 ---
