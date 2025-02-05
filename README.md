@@ -146,7 +146,7 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps to contribute:
+Contributions are welcome! Please follow these steps to contribute [CONTRIBUTING](CONTRIBUTING.md):
 
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature-name`).
