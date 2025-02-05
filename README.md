@@ -120,7 +120,7 @@ Visit `http://127.0.0.1:8000` in your browser.
 ### Adding a New Module
 
 1. Create a new folder in the `modules/` directory, e.g., `modules/new_module/`.
-2. Define your module's configuration in `__init__.py`:
+2. Define your module's configuration in `apps.py`:
 
    ```python
    class ModuleConfig:
