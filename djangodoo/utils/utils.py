@@ -74,7 +74,7 @@ class Utils:
                     "module": dir_name,
                     "name": dir_name.replace("_", " ").title(),
                     "description": "No description available.",
-                    "icon": "base/icon.png",  # Default icon
+                    "icon": "djangodoo/icon.png",  # Default icon
                     "version": "1.0.0",
                     "installed": dir_name in installed_apps,
                 }
