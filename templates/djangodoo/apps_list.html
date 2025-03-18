@@ -1,8 +1,7 @@
-<!-- templates/app_list.html -->
+{% extends 'base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <title>App List</title>
+{% block title %} App List {% endblock title %}
+{% block style %}
     <style>
         .app-grid {
             display: grid;
@@ -23,8 +22,8 @@
             margin: 0 auto 10px;
         }
     </style>
-</head>
-<body>
+{% endblock style %}
+{% block body %}
 
     {% if apps %}
     <h2 align="center">Apps List</h2>
@@ -40,5 +39,4 @@
         </div>
         {% endfor %}
     </div>
-</body>
-</html>
+{% endblock body %}
